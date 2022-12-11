@@ -1,0 +1,41 @@
+<html>
+<head>
+
+	<title>AI Object Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Fascinate+Inline&family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="Background.png">
+<center>
+<h1 class="btn btn-danger header">AI object detection web app!</h1>
+<br>
+<br>
+<h3 class="btn btn-primary">Add the name of your object in the text input below ad press start.</h3>
+<hr>
+<input type="text" id="textInput" class="btn btn-primary" placeholder ="Type name of object here">
+<br>
+<br>
+<button  class="btn btn-primary" id="startDetectingButton" onclick="start()">Start detecting objects</button>
+<br>
+<h3 class="btn btn-danger" id="objectStatus"></h3>
+<br>
+<h3 class="btn btn-danger" id="status">Status:Ready to detect the object:</h3>
+
+</center>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
